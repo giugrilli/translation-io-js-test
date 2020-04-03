@@ -1,0 +1,37 @@
+{
+  "name": "translation-io",
+  "version": "0.3.4",
+  "author": "David Buchan-Swanson <david.buchanswanson@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "translate": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "babel -d lib src/**/*.js",
+    "prepublish": "yarn build"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/preset-flow": "^7.0.0-beta.54",
+    "@deecewan/eslint-config-flow": "^0.0.7",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.2.0",
+    "flow-bin": "^0.77.0",
+    "flow-typed": "^2.5.1",
+    "prettier": "^1.13.7"
+  },
+  "dependencies": {
+    "@deecewan/commander": "^2.16.1",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "glob": "^7.1.2",
+    "mkdirp": "^0.5.1",
+    "sarcastic": "^1.4.0"
+  }
+}
